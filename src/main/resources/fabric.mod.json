@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "tcp-server",
+	"version": "${version}",
+	"name": "TCP Server",
+	"description": "A Fabric mod that enable Minecraft to make TCP connections with external programs.",
+	"authors": [
+		"forj-dev"
+	],
+	"contact": {
+		"homepage": "https://github.com/forj-dev",
+		"sources": "https://github.com/forj-dev/McTcpServer"
+	},
+	"license": "MIT",
+	"icon": "assets/tcp-server/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"forj.tcpserver.TCPServer"
+		]
+	},
+	"mixins": [
+		"tcp-server.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
